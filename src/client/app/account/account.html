@@ -1,0 +1,16 @@
+﻿<section class="mainbar" style="text-align:center;">
+    <section class="matter">
+        <form name="form" ng-submit="vm.logout()" role="form">
+                <div class="form-actions">
+                    <button type="submit" class="btn btn-primary">Logout</button>
+                </div>
+            </form>
+        <div class="container">
+            <div id="fullname" ng-style="{left: nameleft, top: nametop}" my-drag xpos="nameleft" ypos="nametop" style="position:absolute;font-size:32px;font-weight:bold;">{{vm.fullname}}</div>
+            <div id="userimage" ng-style="{left: picleft, top: pictop}" my-drag xpos="picleft" ypos="pictop"  style="position:absolute;">
+                <img ng-src='{{vm.picurl}}' width="250" height="250">
+            </div>
+            
+        </div>
+    </section>
+</section>
